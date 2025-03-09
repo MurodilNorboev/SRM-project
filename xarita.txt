@@ -1,0 +1,66 @@
+src/
+│
+├── assets/                  // Statik fayllar (rasmlar, ikonlar, fontlar)
+│   ├── images/              // Rasm fayllari
+│   ├── icons/               // Ikonlar
+│   └── fonts/               // Fontlar
+│
+├── components/              // Qayta ishlatiladigan komponentlar
+│   ├── Button/              // Button komponenti
+│   │   ├── Button.tsx       // Komponentning asosiy fayli
+│   │   ├── Button.styles.ts // Stili
+│   │   └── Button.test.tsx  // Testlar
+│   │
+│   ├── Input/               // Input komponenti
+│   │   ├── Input.tsx
+│   │   ├── Input.styles.ts
+│   │   └── Input.test.tsx
+│   │
+│   └── Navbar/              // Navbar komponenti
+│       ├── Navbar.tsx
+│       ├── Navbar.styles.ts
+│       └── Navbar.test.tsx
+│
+├── pages/                   // Sahifalar (page komponentlari)
+│   ├── Home/                // Bosh sahifa
+│   │   ├── Home.tsx
+│   │   ├── Home.styles.ts
+│   │   └── Home.test.tsx
+│   │
+│   ├── PostDetail/          // Post detail sahifasi
+│   │   ├── PostDetail.tsx
+│   │   ├── PostDetail.styles.ts
+│   │   └── PostDetail.test.tsx
+│   │
+│   └── Login/               // Kirish sahifasi
+│       ├── Login.tsx
+│       ├── Login.styles.ts
+│       └── Login.test.tsx
+│
+├── services/                // API bilan bog'lanish va servislar
+│   ├── api.ts               // API bilan bog'lanish uchun umumiy fayl
+│   ├── postService.ts       // Postlar bilan bog'liq API servis
+│   └── userService.ts       // Foydalanuvchilar bilan bog'liq API servis
+│
+├── state/                   // Global state (redux yoki context)
+│   ├── store.ts             // Store fayli (redux uchun)
+│   ├── actions/             // Harakatlar (actions)
+│   │   └── postActions.ts   // Post bilan bog'liq harakatlar
+│   └── reducers/            // Reducer'lar
+│       └── postReducer.ts   // Postlar reduceri
+│
+├── utils/                   // Foydalanuvchi funksiyalar
+│   ├── dateUtils.ts         // Sana va vaqt bilan bog'liq yordamchi funksiyalar
+│   ├── validationUtils.ts   // Validatsiya funksiyalari
+│   └── formattingUtils.ts   // Formatlash funksiyalari
+│
+├── types/                   // Tiplar (interface va type)
+│   ├── postTypes.ts         // Postlar uchun tiplar
+│   └── userTypes.ts         // Foydalanuvchilar uchun tiplar
+│
+├── hooks/                   // Custom React hooks
+│   ├── usePosts.ts          // Postlar uchun custom hook
+│   ├── useAuth.ts           // Auth bilan bog'liq custom hook
+│   └── useUser.ts           // Foydalanuvchi uchun custom hook
+│
+└── App.tsx                  // Asosiy App komponenti
