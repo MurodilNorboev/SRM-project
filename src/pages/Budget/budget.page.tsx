@@ -2,7 +2,7 @@ import React from 'react'
 
 const BudgetPage = () => {
   return (
-    <div>BudgetPage</div>
+    <div>BudgetPages</div>
   )
 }
 
