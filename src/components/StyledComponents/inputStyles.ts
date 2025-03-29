@@ -36,3 +36,16 @@ export const HelperText = styled.div<InputProps>`
   margin-top: 4px;
   visibility: ${(props) => (props.helperText ? "visible" : "hidden")};
 `;
+
+export const CustomSearchInput = styled.input<InputProps>`
+  padding: 8px 12px;
+  border: 1px solid #d8d6ff;
+  border-radius: 6px;
+  background: white;
+  font-size: 14px;
+  outline: none;
+  width: ${(props) => props.width || "180px"};
+  width: ${(props) => props.width || "200px"};
+  height: ${(props) => props.height || "44px"};
+  flex-shrink: 0;
+`;

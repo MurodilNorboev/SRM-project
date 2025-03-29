@@ -1,6 +1,5 @@
 import { CssVarsProvider } from "@mui/joy/styles";
 import CssBaseline from "@mui/joy/CssBaseline";
-// import Box from "@mui/joy/Box";
 import { Route, Routes } from "react-router-dom";
 import Header from "./components/Sidebar/Headers";
 import Sidebar, { ItemData } from "./components/Sidebar/sidebar";

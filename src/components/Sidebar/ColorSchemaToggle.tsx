@@ -19,7 +19,6 @@ export default function ColorSchemeToggle(props: IconButtonProps) {
         variant="outlined"
         color="neutral"
         {...other}
-        // sx={sx}
         disabled
       />
     );

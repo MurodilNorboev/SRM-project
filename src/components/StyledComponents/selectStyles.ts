@@ -9,6 +9,8 @@ export const CustomSelect = styled.select<SelectProps>`
   padding: ${(props) => props.padding || "8px 12px"};
   width: ${(props) => props.width || "100%"};
   height: ${(props) => props.height || "40px"};
+  background-color: ${(props) => props.background || "var(--100, #efeef8)"}; ;
+  color: ${(props) => props.color || "#BFBAE3"};
   font-size: 14px;
   font-weight: 500;
   appearance: none; /* To remove the default arrow in some browsers */
@@ -55,3 +57,7 @@ export const CustomOption = styled.option`
     background-color: #d0d0d0;
   }
 `;
+
+
+
+

@@ -2,6 +2,9 @@ import styled from "styled-components";
 import { ButtonProps } from "./types";
 
 export const CustomButton = styled.button<ButtonProps>`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 6px;
   background: linear-gradient(
       0deg,
@@ -12,7 +15,8 @@ export const CustomButton = styled.button<ButtonProps>`
   color: white;
   border: none;
   padding: ${(props) => props.padding || "10px 20px"};
-  width: ${(props) => props.width || "auto"};
+  width: ${(props) => props.width || "162px"};
+  min-width: ${(props) => props.width || "162px"};
   height: ${(props) => props.height || "40px"};
   cursor: pointer;
 
@@ -30,8 +34,8 @@ export const CustomWhiteButton = styled.button<ButtonProps>`
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px; 
-  border: ${(props) => props.border || '1px solid var(--600, #2C2669)'};
+  line-height: 24px;
+  border: ${(props) => props.border || "1px solid var(--600, #2C2669)"};
   padding: ${(props) => props.padding || "10px 20px"};
   width: ${(props) => props.width || "auto"};
   height: ${(props) => props.height || "40px"};
@@ -45,16 +49,16 @@ export const CustomWhiteButton = styled.button<ButtonProps>`
 
 export const CustomBinafshaButton = styled.button<ButtonProps>`
   border-radius: 6px;
-  border: border 1px solid #A098D9;
-  background: var(--50, #A098D5);
-  color: var(--600, #EFEEF8);
+  border: border 1px solid #a098d9;
+  background: var(--50, #a098d5);
+  color: var(--600, #efeef8);
   text-align: center;
   font-family: inter;
   font-size: 10px;
   font-style: normal;
   font-weight: 700;
-  line-height: 16px; 
-  border: ${(props) => props.border || '1px solid var(--600, #2C2669)'};
+  line-height: 16px;
+  border: ${(props) => props.border || "1px solid var(--600, #2C2669)"};
   padding: ${(props) => props.padding || "10px 20px"};
   width: ${(props) => props.width || "auto"};
   height: ${(props) => props.height || "40px"};

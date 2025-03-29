@@ -20,4 +20,6 @@ export interface SelectProps {
   width?: string;
   height?: string;
   padding?: string;
+  background?: string;
+  color?: string;
 }

@@ -4,14 +4,14 @@ import HttpBackend from 'i18next-http-backend';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
 i18n
-  .use(HttpBackend) // JSON fayllardan tarjimalarni yuklash
-  .use(LanguageDetector) // Brauzer tilini aniqlash
-  .use(initReactI18next) // React uchun integratsiya
+  .use(HttpBackend) 
+  .use(LanguageDetector) 
+  .use(initReactI18next) 
   .init({
-    fallbackLng: 'en', // Agar brauzer tili topilmasa, inglizchani ishlatamiz
-    debug: true, // Konsolda xatolik va ma’lumotlarni ko‘rish uchun
+    fallbackLng: 'en',
+    debug: true, 
     interpolation: {
-      escapeValue: false, // JSX bilan ishlashda `escape` ni o‘chirib qo‘yish
+      escapeValue: false, 
     },
   });
 

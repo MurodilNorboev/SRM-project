@@ -1,50 +1,87 @@
+export interface Lead {
+  id: number;
+  from: string;
+  section: string;
+  avatar?: string;
+  Rekvizitlar: {
+    id: number;
+    full_name: string;
+    phone_number: string;
+    update: string;
+  }; 
+}
+
 export const leads = [
-    {
+  {
+    id: 1,
+    from: "Telegram",
+    section: "Elementary",
+    avatar: "E",
+    Rekvizitlar: {
       id: 1,
-      name: "Shoraximov Shamsiddin",
-      phone: "99 811 11 11",
-      from: "Telegram",
-      section: "Elementary",
-      avatar: "E",
+      full_name: "Shoraximov Shamsiddin",
+      phone_number: "99 811 11 11",
+      update: "01.01.2024",
     },
-    {
+  },
+  {
+    id: 2,
+    from: "Instagram",
+    section: "Pre - Inter",
+    avatar: "https://source.unsplash.com/random/40x40",
+    Rekvizitlar: {
       id: 2,
-      name: "Asliddinov Odilbek",
-      phone: "99 811 11 11",
-      from: "Instagram",
-      section: "Pre - Inter",
-      avatar: "https://source.unsplash.com/random/40x40",
+      full_name: "",
+      phone_number: "",
+      update: "01.01.2024",
     },
-    {
+  },
+  {
+    id: 3,
+    from: "other",
+    section: "Beginer",
+    avatar: "W",
+    Rekvizitlar: {
       id: 3,
-      name: "Ravshanjon",
-      phone: "99 811 11 11",
-      from: "Xolasi orqali",
-      section: "Beginer",
-      avatar: "W",
+      full_name: "",
+      phone_number: "",
+      update: "01.01.2024",
     },
-    {
+  },
+  {
+    id: 4,
+    from: "other",
+    section: "Pre - Inter",
+    avatar: "S",
+    Rekvizitlar: {
       id: 4,
-      name: "Ulug’bek",
-      phone: "99 811 11 11",
-      from: "---",
-      section: "Pre - Inter",
-      avatar: "S",
+      full_name: "",
+      phone_number: "",
+      update: "01.01.2024",
     },
-    {
+  },
+  {
+    id: 5,
+    from: "other",
+    section: "Elementary",
+    avatar: "D",
+    Rekvizitlar: {
       id: 5,
-      name: "Sattor",
-      phone: "99 811 11 11",
-      from: "---",
-      section: "Elementary",
-      avatar: "D",
+      full_name: "",
+      phone_number: "",
+      update: "01.01.2024",
     },
-    {
+  },
+  {
+    id: 6,
+    from: "other",
+    section: "Beginer",
+    avatar: "E",
+    Rekvizitlar: {
       id: 6,
-      name: "Eshonbek",
-      phone: "99 811 11 11",
-      from: "---",
-      section: "Beginer",
-      avatar: "E",
+      full_name: "",
+      phone_number: "",
+      update: "01.01.2024",
     },
-  ];
+  },
+];
