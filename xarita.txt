@@ -64,3 +64,50 @@ src/
 │   └── useUser.ts           // Foydalanuvchi uchun custom hook
 │
 └── App.tsx                  // Asosiy App komponenti
+
+
+
+
+1. O‘zgarishlarni tasvirlash (Description of changes)
+| O‘zbekcha                        | English                            |
+|----------------------------------|------------------------------------|
+| Boshlang‘ich yuklash             | Initial commit                     |
+| Kod optimallashtirildi           | Code optimization                  |
+| Xatoliklar tuzatildi             | Bug fixes                          |
+| Yangi funksiya qo‘shildi         | Added new feature                  |
+| Dizayn yaxshilandi               | Improved design                    |
+| Ma’lumotlar bazasi bog‘landi     | Connected to database              |
+| Fayllar yangilandi               | Updated files                      |
+| O‘chirilgan kodlar               | Removed unused code                |
+| Tezlik oshirildi                 | Performance improvement            |
+| Tuzilish o‘zgartirildi           | Refactored structure               |
+
+2. Maxsus holatlar (Specific cases)
+| O‘zbekcha                        | English                            |
+|----------------------------------|------------------------------------|
+| Urg‘ichli xatolar tuzatildi      | Critical bug fix                   |
+| Kod tozalandi                    | Code cleanup                       |
+| Testlar qo‘shildi                | Added tests                        |
+| Responsivlik yaxshilandi         | Improved responsiveness            |
+| Frontend o‘zgarishlari           | Frontend changes                   |
+| Backend yangilandi               | Backend updates                    |
+| Ma’lumot qo‘shildi               | Added documentation                |
+
+3. Qo‘shimcha holatlar (Additional cases)
+| O‘zbekcha                        | English                            |
+|----------------------------------|------------------------------------|
+| API qo‘shildi                    | Added API                          |
+| API yangilandi                   | Updated API                        |
+| Xavfsizlik yaxshilandi           | Improved security                  |
+| Muvofiqlik yangilandi            | Updated compatibility              |
+| Caching qo‘shildi                | Added caching                      |
+| Loglar qo‘shildi                  | Added logging                      |
+| Kod kommentariyalandi            | Added comments                     |
+| Kod hajmi kamaytirildi           | Reduced bundle size                |
+| Ishlash barqarorligi oshirildi   | Improved stability                 |
+| Yangi sahifa qo‘shildi           | Added new page                     |
+| Yangi komponent qo‘shildi        | Added new component                |
+| Konfiguratsiya o‘zgartirildi     | Updated configuration              |
+| Qayta yozildi                    | Rewritten                          |
+
+Bu jadval git commitlar uchun to‘liq qo‘llanma bo‘lib, istalgan holatda ishlatish mumkin. ✅
