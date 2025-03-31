@@ -10,6 +10,7 @@ const columns = [
 export const TableView = ({ leads }: any) => {
   return (
     <TableComponent
+      id="lead"
       data={leads}
       columns={columns}
       selectable={false}

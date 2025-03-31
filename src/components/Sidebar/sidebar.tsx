@@ -62,39 +62,38 @@ export const ItemData = [
   },
   {
     id: 7,
+    a: "Profile",
+    icon: <QuestionAnswerRoundedIcon />,
+    to: "/profile",
+  },
+  {
+    id: 8,
+    a: "Teacher Datail",
+    icon: <QuestionAnswerRoundedIcon />,
+    to: "/teacherDatail/:id",
+  },
+  {
+    id: 9,
     a: "office",
     icon: <QuestionAnswerRoundedIcon />,
     to: "/office",
   },
   {
-    id: 8,
-    a: "CEO",
+    id: 10,
+    a: "ceo",
     icon: <QuestionAnswerRoundedIcon />,
     to: "/ceo",
   },
   {
-    id: 9,
+    id: 11,
     a: "Archive",
     icon: <QuestionAnswerRoundedIcon />,
     to: "/archive",
   },
-  {
-    id: 10,
-    a: "Profile",
-    icon: <QuestionAnswerRoundedIcon />,
-    to: "/profile",
-  },
-
-  {
-    id: 11,
-    a: "Teacher Datail",
-    icon: <QuestionAnswerRoundedIcon />,
-    to: "/teacherDatail/:id",
-  }
 ];
 
 export default function Sidebar() {
-  const [selectedItem, setSelectedItem] = React.useState<string | null>(null);
+  const [selectedItem] = React.useState<string | null>(null);
   const navigate = useNavigate();
 
   const handleClick = (item: { a: string; to: string }) => {

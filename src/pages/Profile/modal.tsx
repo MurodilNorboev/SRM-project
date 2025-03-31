@@ -11,7 +11,7 @@ import {
   CustomOption,
   CustomSelect,
 } from "../../components/StyledComponents/selectStyles";
-import { countries, initialFormData } from "./mock";
+import { countries, initialFormData } from "../../mock/ProfileMock";
 
 const Modal = ({ closeModal }: { closeModal: () => void }) => {
   const { t } = useTranslation();

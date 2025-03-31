@@ -1,7 +1,7 @@
 import { ButtonProps } from "../../types";
 import ActiveSalary from "../active.salary";
 import React from "react";
-import { groups } from "../../../mock";
+import { groups } from "../../../../../mock/ColumnsMock";
 import { GroupCardCont } from "../incExp/styles";
 import { LefatAcive } from "./inc";
 import { GroupCard } from "./exp";

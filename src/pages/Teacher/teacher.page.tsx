@@ -1,5 +1,5 @@
 import { TableComponent } from "../../components/Table/table";
-import { columns, leads } from "./mock";
+import { columnsTeacher, leads } from "../../mock/ColumnsMock";
 import { useColorScheme } from "@mui/joy/styles";
 import Filter from "./filters/filter";
 import { GlobalContainer } from "../../styles/bgStyles";
@@ -16,7 +16,7 @@ const TeacherPage = () => {
       <Filter />
       <TableComponent
         data={leads}
-        columns={columns}
+        columns={columnsTeacher}
         selectable={false}
         showMenu={true}
         actions={["edit", "delete", "add", "sms"]} // Add a "view" action

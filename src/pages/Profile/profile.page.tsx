@@ -15,12 +15,16 @@ import {
 import Avatar from "@mui/joy/Avatar";
 import Modal from "./modal";
 import { useTranslation } from "react-i18next";
+import { GlobalContainer } from "../../styles/bgStyles"
+import { useColorScheme } from "@mui/joy/styles";
 const ProfilePage = () => {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
+  const { mode } = useColorScheme();
 
   return (
-    <ProfileContainer>
+    <GlobalContainer style={{ backgroundColor: mode === "dark" ? "#0B0D0E" : "#EFEEF8" }}>
+        <ProfileContainer>
       <ProfileContent>
         <LeftItem>
           <Avatar
@@ -58,6 +62,7 @@ const ProfilePage = () => {
 
       {isOpen && <Modal closeModal={() => setIsOpen(false)} />}
     </ProfileContainer>
+    </GlobalContainer>
   );
 };
 

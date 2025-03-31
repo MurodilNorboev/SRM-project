@@ -54,7 +54,7 @@ export const TableComponent = ({
           overflow: "scroll",
           maxHeight: "490px",
           margin: "0 auto",
-          ...style, 
+          ...style,
         }}
       >
         <Table
@@ -92,7 +92,7 @@ export const TableComponent = ({
           </thead>
           <tbody className="tbody">
             {data.map((row, index) => (
-              <tr key={row.id}>
+              <tr style={{ cursor: "pointer" }} key={row.id}>
                 {selectable && (
                   <td onClick={() => toggleMenu(row.id)}>
                     <input type="checkbox" />
