@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.div<{ customStyle?: React.CSSProperties }>`
   display: flex;
   position: absolute;
   top: 210px;
   padding-right: 40px;
   align-items: start;
+  ${({ customStyle }) => customStyle && { ...customStyle }}
 
   .Table {
     .thead {
@@ -35,6 +36,7 @@ export const Container = styled.div`
         font-style: normal;
         font-weight: 500;
         line-height: 16px; /* 114.286% */
+        z-index: 999999999;
       }
     }
   }

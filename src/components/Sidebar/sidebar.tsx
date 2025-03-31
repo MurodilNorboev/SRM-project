@@ -84,6 +84,13 @@ export const ItemData = [
     icon: <QuestionAnswerRoundedIcon />,
     to: "/profile",
   },
+
+  {
+    id: 11,
+    a: "Teacher Datail",
+    icon: <QuestionAnswerRoundedIcon />,
+    to: "/teacherDatail/:id",
+  }
 ];
 
 export default function Sidebar() {

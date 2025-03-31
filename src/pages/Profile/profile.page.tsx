@@ -30,12 +30,12 @@ const ProfilePage = () => {
             sx={{ height: "100%", width: "100%", marginBottom: "-20px" }}
           />
         </LeftItem>
-        <CustomButton onClick={() => setIsOpen(true)}>
+        <CustomButton width="150px" height="44px" padding="0px" border="none" onClick={() => setIsOpen(true)}>
           {t("Edit_profile")}
         </CustomButton>
       </ProfileContent>
       <Text1>Andrew Smith</Text1>
-      <CustomBinafshaButton width="42px" height="24px" padding="0px">
+      <CustomBinafshaButton>
         {t("ceo")}
       </CustomBinafshaButton>
       <div

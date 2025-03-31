@@ -72,3 +72,57 @@ export const CustomBinafshaButton = styled.button<ButtonProps>`
     color: #fff;
   }
 `;
+
+export const BtnWrapper = styled.div`
+  display: flex;
+`;
+
+export const VMENU = styled.button<ButtonProps>`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: ${(props) => props.height || "44px"};
+  width: ${(props) => props.width || "60px"};
+  border-radius: 0px 6px 6px 0px;
+  border: ${(props) => props.border || "1px solid var(--600, #2c2669)"};
+  background: ${({ $active }) => ($active ? "#2C2669" : "#FFF")};
+  color: ${(props) => props.border || "#2C2669"};
+  font-size: ${(props) => props.fontSize || "14px"};
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+`;
+
+export const MIDDLE = styled.button<ButtonProps>`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: ${(props) => props.height || "44px"};
+  width: ${(props) => props.width || "60px"};
+  border: ${(props) => props.border || "1px solid var(--600, #2c2669)"};
+  background: ${({ $active }) => ($active ? "#2C2669" : "#FFF")};
+  color: ${(props) => props.border || "#2C2669"};
+  font-size: ${(props) => props.fontSize || "14px"};
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+`;
+
+export const HMENU = styled.button<ButtonProps>`
+  border-radius: 6px 0px 0px 6px;
+  border: ${(props) => props.border || "1px solid var(--600, #2c2669)"};
+  height: ${(props) => props.height || "44px"};
+  width: ${(props) => props.width || "60px"};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: ${({ $active }) => ($active ? "#2C2669" : "#FFF")};
+  color: ${(props) => props.border || "#2C2669"};
+  font-size: ${(props) => props.fontSize || "14px"};
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+`;

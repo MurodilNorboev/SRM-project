@@ -3,6 +3,8 @@ export interface ButtonProps {
   height?: string;
   padding?: string;
   border?: string;
+  $active?: boolean;
+  fontSize?: string;
 }
 
 export interface InputProps {

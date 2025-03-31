@@ -13,6 +13,7 @@ import NotificationPage from "./pages/Notification/notification.page";
 import NavbarSidebarComponent from "./components/Sidebar/navbar.Sidebar";
 import ProfilePage from "./pages/Profile/profile.page";
 import Box from "@mui/joy/Box";
+import DatailPage from "./pages/Teacher/DATAIL/datail";
 
 export default function JoyOrderDashboardTemplates() {
   return (
@@ -56,6 +57,8 @@ export default function JoyOrderDashboardTemplates() {
                     ELEMENT = <SettingPage.ArchivePage />;
                   } else if (a.to === "/profile") {
                     ELEMENT = <ProfilePage />;
+                  } else if (a.to === "/teacherDatail/:id") {
+                    ELEMENT = <DatailPage />;
                   }
 
                   return ELEMENT ? (
