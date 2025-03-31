@@ -1,7 +1,7 @@
+import { TableComponent } from "../../shared";
 import { columns, leads } from "../../shared/mock/ColumnsMock";
-import { TableComponent } from "../../shared/Table/table";
 
-const Table = () => {
+const TableDatail = () => {
   return (
     <TableComponent
       id="lead"
@@ -17,4 +17,4 @@ const Table = () => {
   );
 };
 
-export default Table;
+export default TableDatail;

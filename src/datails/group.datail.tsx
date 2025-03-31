@@ -1,7 +1,8 @@
 import { useColorScheme } from "@mui/joy/styles";
 import { GlobalContainer } from "../shared/styles/bgStyles";
 import { useState } from "react";
-import { Attandance, TopButtons } from "../hooks";
+import { FloatActionButton } from "../shared";
+import { Attandance } from "../hooks";
 
 const GroupDatail = () => {
   const { mode } = useColorScheme();
@@ -9,17 +10,20 @@ const GroupDatail = () => {
   const [salaryView, setSalaryView] = useState<"inc" | "exp">("inc");
   return (
     <GlobalContainer
-      style={{ backgroundColor: mode === "dark" ? "#0B0D0E" : "#EFEEF8", overflow: 'scroll',  }}
+      style={{
+        backgroundColor: mode === "dark" ? "#0B0D0E" : "#EFEEF8",
+        overflow: "scroll",
+      }}
     >
       <Attandance />
-      <TopButtons
-        left="Left" 
+      <FloatActionButton
+        left="Left"
         middle="Middle"
         right="Right"
         mainView={mainView}
         setMainView={setMainView}
-        salaryView={salaryView} 
-        setSalaryView={setSalaryView} 
+        salaryView={salaryView}
+        setSalaryView={setSalaryView}
         intexp={false}
       />
     </GlobalContainer>
