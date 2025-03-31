@@ -1,8 +1,6 @@
-import { TableComponent } from "../shared/Table/table";
-import { columnsTeacher, leads } from "../shared/mock/ColumnsMock";
 import { useColorScheme } from "@mui/joy/styles";
-import Filter from "../hooks/Teacher/filter";
 import { GlobalContainer } from "../shared/styles/bgStyles";
+import { Filter, TableTeacher } from "../hooks";
 
 const TeacherPage = () => {
   const { mode }: any = useColorScheme();
@@ -12,17 +10,7 @@ const TeacherPage = () => {
       style={{ backgroundColor: mode === "dark" ? "#0B0D0E" : "#EFEEF8" }}
     >
       <Filter />
-      <TableComponent
-        data={leads}
-        columns={columnsTeacher}
-        selectable={false}
-        showMenu={true}
-        actions={["edit", "delete", "add", "sms"]} // Add a "view" action
-        showIndex={true}
-        navigation={true}
-        nav={"teacherDatail"}
-        id={leads[0].id}
-      />
+     <TableTeacher />
     </GlobalContainer>
   );
 };

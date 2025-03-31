@@ -11,6 +11,7 @@ export const TableView = ({ leads }: any) => {
   return (
     <TableComponent
       id="lead"
+      style={{ marginTop: "40px" }}
       data={leads}
       columns={columns}
       selectable={false}

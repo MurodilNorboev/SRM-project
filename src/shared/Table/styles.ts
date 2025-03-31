@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Container = styled.div<{ customStyle?: React.CSSProperties }>`
   display: flex;
   position: absolute;
-  top: 210px;
   padding-right: 40px;
   align-items: start;
   ${({ customStyle }) => customStyle && { ...customStyle }}
