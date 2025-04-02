@@ -14,7 +14,7 @@ import {
 } from "../pages";
 import { Header, ItemData, Sidebar } from "../shared";
 import { NavbarSidebarComponent } from "../shared/Sidebar";
-import { GroupDatail, ParentComponent } from "../datails";
+import { GroupDatail, ParentComponent, StudentDatail } from "../datails";
 
 export default function JoyOrderDashboardTemplates() {
   return (
@@ -62,6 +62,8 @@ export default function JoyOrderDashboardTemplates() {
                     ELEMENT = <ParentComponent />;
                   } else if (a.to === "/groupDatail/:id") {
                     ELEMENT = <GroupDatail />;
+                  } else if (a.to == "/studentDatail/:id") {
+                    ELEMENT = <StudentDatail />
                   }
 
                   return ELEMENT ? (

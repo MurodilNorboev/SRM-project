@@ -3,8 +3,8 @@ import {
   CustomOption,
   CustomSelect,
 } from "../../shared/component.styles/selectStyles";
-import { CustomButton } from "../../shared/component.styles/buttonStyles";
-import { ResetButton, Container } from "../Lead/Filters/styles";
+import { CustomButton, CustomResetButton } from "../../shared/component.styles/buttonStyles";
+import { Container } from "../Lead/Filters/styles";
 
 const SelectInputs = () => {
   return (
@@ -34,9 +34,9 @@ const SelectInputs = () => {
         >
           <CustomOption>From where</CustomOption>
         </CustomSelect>
-        <ResetButton style={{ width: "170px" }}>
+        <CustomResetButton width="170px">
           <FiRefreshCw /> Reset filter
-        </ResetButton>
+        </CustomResetButton>
       </div>
       <CustomButton height="44px" width="170px">
         + Add lead

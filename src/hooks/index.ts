@@ -6,3 +6,7 @@ export { default as IncomeTable } from "./Teacher/incExp/Income";
 export { default as ExpenseTable } from "./Teacher/incExp/Expense";
 export { Attandance, Table, SelectInputs } from "./Group/index";
 export { default as TableTeacher } from "./Teacher/table";
+export { StudentInput, StudentTable } from "./Student/index";
+export { CommentCard, StudentGroupCard, HistoryCard, SMSCard, TabMenu, Transactions, StudentUserCard } from "./Student/index"; 
+export { BudgetMain, BudgetCateogry, BudgetExpense, BudgetIncome,} from "./Budget/index";
+export { default as NotificationDatail } from "./Notification/use.notification";

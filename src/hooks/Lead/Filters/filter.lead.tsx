@@ -1,11 +1,11 @@
 import React from "react";
 import { FiRefreshCw } from "react-icons/fi";
-import { Container, ResetButton } from "./styles";
+import { Container } from "./styles";
 import {
   CustomOption,
   CustomSelect,
 } from "../../../shared/component.styles/selectStyles";
-import { CustomButton } from "../../../shared/component.styles/buttonStyles";
+import { CustomButton, CustomResetButton } from "../../../shared/component.styles/buttonStyles";
 import { CustomSearchInput } from "../../../shared/component.styles/inputStyles";
 
 const FilterBar: React.FC = () => {
@@ -18,9 +18,9 @@ const FilterBar: React.FC = () => {
       <CustomSelect background="white" height="44px" color="#BFBAE3">
         <CustomOption>From where</CustomOption>
       </CustomSelect>
-      <ResetButton>
+      <CustomResetButton>
         <FiRefreshCw /> Reset filter
-      </ResetButton>
+      </CustomResetButton>
       <CustomButton height="44px" width="162px">
         + Add lead
       </CustomButton>

@@ -6,3 +6,4 @@ export { Sidebar,Header, ItemData } from "./Sidebar/index";
 export { TableComponent } from "./Table/index";
 export {} from "./utils/index";
 export { FloatActionButton, AktivPages } from "./Button/index";
+export { UserCard, GroupCard } from "./Cards/index";

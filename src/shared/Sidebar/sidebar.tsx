@@ -71,7 +71,7 @@ export const ItemData = [
     a: "Teacher Datail",
     icon: <QuestionAnswerRoundedIcon />,
     to: "/teacherDatail/:id",
-  },
+  }, 
   {
     id: 9,
     a: "Group Datail",
@@ -80,18 +80,24 @@ export const ItemData = [
   },
   {
     id: 10,
+    a: "Student Datail",
+    icon: <QuestionAnswerRoundedIcon />,
+    to: "/studentDatail/:id",
+  },
+  {
+    id: 11,
     a: "office",
     icon: <QuestionAnswerRoundedIcon />,
     to: "/office",
   },
   {
-    id: 11,
+    id: 12,
     a: "ceo",
     icon: <QuestionAnswerRoundedIcon />,
     to: "/ceo",
   },
   {
-    id: 12,
+    id: 13,
     a: "Archive",
     icon: <QuestionAnswerRoundedIcon />,
     to: "/archive",

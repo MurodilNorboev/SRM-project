@@ -126,3 +126,26 @@ export const HMENU = styled.button<ButtonProps>`
   font-weight: 500;
   line-height: 16px;
 `;
+
+export const CustomResetButton = styled.button<ButtonProps>`
+  border: 1px solid #d8d6ff;
+  border-radius: 6px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: ${(props) => props.color || "#a29bfe"};
+  font-family: "Public Sans";
+  width: ${(props) => props.width || "125px"};
+  height: ${(props) => props.height || "44px"};
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+
+  &:hover {
+    color: ${(props) => props.color || "#6c5ce7"};
+  }
+`;
